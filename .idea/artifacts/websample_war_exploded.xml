@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="websample:war exploded">
+    <output-path>$PROJECT_DIR$/target/</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="websample" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.11.0" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.11.0" />
+        </element>
+        <element id="directory" name="src">
+          <element id="module-source" name="websample" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="websample/web/Web" />
+    </root>
+  </artifact>
+</component>
