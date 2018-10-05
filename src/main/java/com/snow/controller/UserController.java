@@ -21,6 +21,8 @@ public class UserController extends HttpServlet {
         System.out.print("into servlet .");
         PrintWriter out = response.getWriter();
         out.println("This is User Servlet .");
+        out.println("git");
+
     }
 
 
