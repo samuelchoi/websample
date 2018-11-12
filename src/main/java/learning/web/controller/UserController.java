@@ -1,4 +1,4 @@
-package com.snow.controller;
+package learning.web.controller;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,13 +16,19 @@ public class UserController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
+        doHello(response, "");
+
+    }
+
+    private void doHello(HttpServletResponse response, String hello) throws IOException {
         response.setContentType("test/html");
 
         System.out.print("into servlet .");
         PrintWriter out = response.getWriter();
-        out.println("This is User Servlet .");
-        out.println("git");
+        out.println("This is User Servl");
 
+
+        out.println();
     }
 
 

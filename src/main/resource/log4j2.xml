@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+  <Appenders>
+    
+    <!-- console appender -->
+    <Console name="console-appender" target="SYSTEM_OUT">
+      
+      <!-- Flow tracing is most useful with a pattern that shows location.
+           Below pattern outputs class, line number and method name. -->
+      <!-- <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/> -->
+      
+      
+      <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+      
+    </Console>
+    
+    <!-- file appender-->
+    <File name="file-appender" fileName="target/snow.log" append="true">
+      <PatternLayout>
+      	<pattern>%d{HH:mm:ss} %-5level %class{36} %L %M - %msg%xEx%n</pattern>
+      </PatternLayout>
+    </File>
+    
+  </Appenders>
+  
+  <Loggers>
+  
+  	<!-- all logger output to console and file sametime -->
+    <Root level="debug">
+      <AppenderRef ref="console-appender"/>
+      <AppenderRef ref="file-appender"/>
+    </Root>
+    
+  </Loggers>
+</Configuration>

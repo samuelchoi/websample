@@ -9,7 +9,7 @@
 
   <servlet>
     <servlet-name>UserController</servlet-name>
-    <servlet-class>com.snow.controller.UserController</servlet-class>
+    <servlet-class>learning.web.controller.UserController</servlet-class>
   </servlet>
 
   <servlet-mapping>
