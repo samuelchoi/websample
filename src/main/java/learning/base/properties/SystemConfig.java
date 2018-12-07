@@ -12,7 +12,7 @@ public class SystemConfig {
     private static Properties properties;
     private static Logger logger = LogManager.getLogger();
 
-    public static final void main(String[] args) {
+    public static void main(String[] args) {
 
         properties = new Properties();
         FileInputStream fin = null;
@@ -20,20 +20,15 @@ public class SystemConfig {
 
             fin = new FileInputStream("d://config.properties");
             properties.load(fin);
-
             // logger.debug(config.get("key");
             System.out.print(properties.get("key"));
 
         } catch (IOException e) {
-
             e.printStackTrace();
-
         } finally {
-
-            if (fin != null) {
-                try {
-                    fin.close();
-                } catch (IOException e) {}
+            if (fin != null) try {
+                fin.close();
+            } catch (IOException e) {
             }
         }
 
