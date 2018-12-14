@@ -104,7 +104,7 @@
     <dependency>
       <groupId>com.baomidou</groupId>
       <artifactId>mybatis-plus</artifactId>
-      <version>2.3</version>
+      <version>3.0.2</version>
     </dependency>
 
     <!-- h2database -->
@@ -163,6 +163,12 @@
       <version>5.22.0</version>
     </dependency>
 
+    <!-- shrio -->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>1.4.0-RC2</version>
+    </dependency>
 
   </dependencies>
 
