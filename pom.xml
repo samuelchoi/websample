@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>snow</groupId>
@@ -10,6 +10,7 @@
   <packaging>war</packaging>
 
   <name>websample Maven Webapp</name>
+  <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
@@ -92,13 +93,6 @@
       <version>1.2</version>
     </dependency>
 
-    <!-- commons email -->
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-email</artifactId>
-      <version>1.5</version>
-    </dependency>
-
     <!-- mybatis -->
     <dependency>
       <groupId>org.mybatis</groupId>
@@ -110,7 +104,7 @@
     <dependency>
       <groupId>com.baomidou</groupId>
       <artifactId>mybatis-plus</artifactId>
-      <version>3.0.6</version>
+      <version>3.0.2</version>
     </dependency>
 
     <!-- h2database -->
@@ -129,23 +123,10 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- shiro-core -->
-    <dependency>
-      <groupId>org.apache.shiro</groupId>
-      <artifactId>shiro-core</artifactId>
-      <version>1.4.0</version>
-    </dependency>
-
     <!-- spring basic -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
-      <version>5.0.2.RELEASE</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-beans</artifactId>
       <version>5.0.2.RELEASE</version>
     </dependency>
 
@@ -157,23 +138,9 @@
 
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-expression</artifactId>
+      <artifactId>spring-beans</artifactId>
       <version>5.0.2.RELEASE</version>
     </dependency>
-
-    <!-- srping web -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
-      <version>5.0.2.RELEASE</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-      <version>5.0.2.RELEASE</version>
-    </dependency>
-
 
     <!-- spring session -->
     <dependency>
@@ -189,18 +156,18 @@
       <version>5.0.2.RELEASE</version>
     </dependency>
 
-    <!-- spring-jdbc -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-jdbc</artifactId>
-      <version>5.0.2.RELEASE</version>
-    </dependency>
-
     <!-- activiti-engine -->
     <dependency>
       <groupId>org.activiti</groupId>
       <artifactId>activiti-engine</artifactId>
       <version>5.22.0</version>
+    </dependency>
+
+    <!-- shrio -->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>1.4.0-RC2</version>
     </dependency>
 
   </dependencies>
