@@ -92,6 +92,13 @@
       <version>1.2</version>
     </dependency>
 
+    <!-- commons email -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-email</artifactId>
+      <version>1.5</version>
+    </dependency>
+
     <!-- mybatis -->
     <dependency>
       <groupId>org.mybatis</groupId>
@@ -195,7 +202,6 @@
       <artifactId>activiti-engine</artifactId>
       <version>5.22.0</version>
     </dependency>
-
 
   </dependencies>
 
